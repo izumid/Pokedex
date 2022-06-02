@@ -1,0 +1,45 @@
+body > main {
+    position: relative;
+    z-index: 10;
+}
+
+#loginOverlay{
+    position: absolute;
+    width: 100vw;
+    height:  100vh;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: ease-in-out .3s;
+    background-color: rgba(240, 248, 255, 0.5);
+    z-index: 1;
+}
+
+#login{
+    position: absolute;
+    margin-top: -200vh;
+    width: 300px;
+    height: auto  !important;
+    transition: 0.5s ease-in-out;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#login a {
+    font-family: calibri;
+    font-weight: bolder;
+    color: rgba(73, 143, 255);
+    text-decoration: none;
+    margin-top: 20px;
+    transition: ease-in-out .3s;
+}
+
+#login a:hover{ color: rgb(238,28,56); }
+
+

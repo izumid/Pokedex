@@ -1,0 +1,271 @@
+/*======= Containers ================================*/
+#sideScreenTop{
+	width: 100%;
+	height: 45.5%;
+
+	display: flex;
+	flex-direction: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#rectangle{
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-flow: row;
+	align-content: space-around;
+	align-items: center;
+	justify-content: space-around;
+}
+
+#rectangle > .hardware{
+	position: relative;
+	margin-top: 74%;
+	margin-left: -1%;
+}
+
+#grayContainer {
+	margin-left: -13%;
+	margin-top: 4%;
+	width: 91%;
+	height: 90%;
+	
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+
+	-webkit-mask:
+	linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
+	linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
+	linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
+	linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
+	-webkit-mask-size:50.5% 50.5%;
+	-webkit-mask-repeat:no-repeat;
+
+	background-color: rgb(184, 184, 184);
+	--all:0px;
+	--bottom-left:30px;
+	border: 2px solid #333;
+	border-radius: 12px;
+
+}
+
+#whiteContainer {
+	--all:0px;
+	width: 97%;
+	height: 98%;
+	
+	-webkit-mask:
+	linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
+	linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
+	linear-gradient( 135deg, transparent 0 var(--top-left,var(--all)),#fff 0) top left,
+	linear-gradient(-135deg, transparent 0 var(--top-right,var(--all)),#fff 0) top right;
+	-webkit-mask-size:50.5% 50.5%;
+	-webkit-mask-repeat:no-repeat;
+
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	align-items: center;
+	align-self: end;
+		
+	background:rgb(255, 255, 255);
+	--bottom-left:30px;
+	border-radius: 12px;
+}
+/*======= End =======================================*/
+
+/*======= Lights ====================================*/
+#whiteContainer #sideScreenUpLights {
+	width: 15%;
+	height: 7%;
+	
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#whiteContainer #sideScreenUpLights  span{
+	width: 8px;
+	height:8px;
+
+	border-radius: 100%;
+	border: 2px solid #111;
+}
+#whiteContainer #sideScreenUpLights span:first-of-type{
+	background: linear-gradient(
+		-135deg, rgba(97,95,57,1) 1%,
+		rgb(203, 30, 30) 36%,
+		rgb(255, 0, 0) 100%
+	);
+}
+
+#whiteContainer  #sideScreenUpLights  span:last-of-type{
+	background: linear-gradient(
+		-135deg, rgba(97,95,57,1) 1%,
+		rgb(30, 203, 68) 36%,
+		rgb(0, 255, 64) 100%
+	);
+}
+/*======= End =======================================*/
+
+/*======= Pokemon Image Area ========================*/
+#pokemonImageContainer{
+	width: 90%;
+	height: 70%;
+
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+
+	box-shadow: inset 1px 0px 10px 2px rgba(13, 80, 167, 0.13);  
+	border: 1px solid #ccc;
+}
+
+#pokemonImageContainer > img{
+	position: absolute;
+	height: 15%;
+
+	width: 120px;
+	height: auto;
+
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+/*======= End =======================================*/
+
+/*======= Sprite Menu ===============================*/
+#spriteMenu{
+
+	width: 436px;
+	height: 70px;
+
+	display:flex;
+	flex-flow: row;
+	border-radius: 12px;
+	align-items: center;
+}
+
+#sideScreenUpMenu{
+	width: 100%;
+	height: 18%;
+
+	display:flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: aliceblue;
+}
+#redButton{
+	margin-left: 15%;
+	width: 32px;
+	height: 32px;
+	font-size: 1.5em;
+	box-shadow: -2px 2px 3px 1px  rgba(100, 17, 27, 1);
+
+	background:#D6111B;
+	border-radius: 100%;
+	border: 2px solid black;
+
+}
+
+#redButton > div{
+	width: 100%;
+	height: 100%;
+
+	display:flex;
+	flex-flow: column ;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 100%;
+}
+
+#redButton > div > span{
+	width: 4px;
+	height: 13px;
+	margin-left: 11%;
+
+	background-color: #fff;
+}
+
+#redButton > div > span:first-of-type{
+	transform: rotate(-35deg);
+	border-top-left-radius: 80px 80px;
+}
+
+#redButton > div > span:last-of-type{
+	margin-top: -13%;
+	transform: rotate(35deg);
+	border-bottom-left-radius: 80px 80px;
+}
+
+/*======= Zoom In/Out Menu =======*/
+.zoomContainer{
+	height: 60%;
+	width: 15%;
+
+	display:flex;
+	flex-flow: column;
+	justify-content: space-around;
+
+}
+.zoomContainer p {
+	font-size: .6rem;
+	width: 100%;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#zoomInButton, #zoomOutButton{
+	width: 100%;
+	height: 30%;
+	cursor: pointer;
+	border: 2px solid black;
+	border-radius: 50px;
+}
+
+#zoomInButton{ 
+	background: rgba(89,245,64,1);    
+	box-shadow: -2px 2px 2px 0px rgba(17, 78, 20,1);
+}
+
+#zoomOutButton{
+	background: rgba(221,97,36,1); 
+	box-shadow: -2px 2px 2px 0px rgba(114,16,13,1);
+}
+/*======= End Zoom ============*/
+
+/*======= Speakers ============*/
+#speaker{
+	width: 15%;
+	height: 50%;
+
+	display: flex;
+	flex-flow: column;
+	align-content: space-between;
+	justify-content: space-between;
+}
+
+#speaker .speakerLine{
+	width: 100%;
+	height: 13%;
+
+	background-color: #555;
+	border-radius: 5px;
+	box-shadow: -1px 1px 3px 1px rgba(49, 49, 49, 0.158);
+}
+
+#sideScreenUpMenu > .hardware{
+	margin-top: -2%;
+	margin-right: 2.5%;
+}
+/*======= End ===============*/
+
+/*======= End =======================================*/

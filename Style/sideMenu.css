@@ -1,0 +1,50 @@
+/*======= Side Menu =================================*/
+#sideMenu{
+    position: fixed;
+    width: 70px;
+    height: 180px;
+
+    display: flex;
+    flex-flow: column;
+    align-self: end;
+    justify-content: space-around;
+    align-items: end;
+
+    background-color: rgba(22, 22, 22, .8);
+    box-shadow: 0px 0px 15px 2px rgba(255, 255, 255, 0.5);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 2px solid  rgba(255,255,255,1);
+}
+
+#sideMenuContainer{
+    width: 83%;
+    height: 63%;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.sideMenuIcon{
+   width: 50px;
+   height: 50px;
+   border-radius: 100%;
+   transition: ease-in-out .4s;
+   cursor: pointer;
+
+   background-repeat: no-repeat;
+   background-size: 70%;
+   background-position: center;
+}
+
+.sideMenuIcon:hover{ background-color: #fff; }
+
+#sideMenuContainer a:nth-of-type(1) div{ background-image: url('../Image/home-2484.png'); }
+
+#sideMenuContainer a:nth-of-type(2) div{  background-image: url('../Image/exit-2856.png'); }
+
+/*======= End =======================================*/
+
+

@@ -1,0 +1,184 @@
+/*======= Basic Structure ============================*/
+body{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-color: black;
+    background-image: url('../Image/background/thumb-1920-680756.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+/*======= End =======================================*/
+
+/*======= Form's Menu ===============================*/
+#menu{
+    position: absolute;
+    width: 370px;
+    height: 370px;
+    border: 4px solid rgba(206,15,33,.4);
+    z-index: 1;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0px 1px 10px 2px rgba(255, 11, 11, 0.8);
+    background-color: rgba(10, 10, 10, .6);
+    border-radius: 100%;
+}
+ 
+ #menu > div{
+    position: absolute;
+    width: 25%;
+    height: 25%;
+	color: white;
+    font-size: bolder;
+	cursor: pointer;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+	border-radius: 100%;
+	background-repeat: no-repeat;
+    background-size: cover;
+ }
+ 
+ #menu > div p {
+    margin-top: 15%;
+    padding: 10px;
+    min-width: 80px;
+    width: auto;
+    font-size: bolder;
+    text-align: center;
+    transition: ease-in-out .3s;
+
+	border-radius: 50px;
+	background-color: rgb(37, 37, 37,.8);
+}
+/*======= End ===========================*/
+
+/*======= Pokeball Shadow ==============*/
+#menu > div:first-of-type,
+   #menu > div:first-of-type p { 
+      box-shadow: 0px 1px 5px 2px rgba(255, 255, 255, 0.8);
+}
+ 
+#menu > div:nth-of-type(2),
+   #menu > div:nth-of-type(2) p{ 
+     box-shadow: 0px 1px 5px 2px rgba(14, 199, 255, 0.8) ;
+}
+ 
+#menu > div:nth-of-type(3),
+   #menu > div:nth-of-type(3) p {
+      box-shadow: 0px 1px 5px 2px rgba(248, 232, 11, 0.8);
+}
+ 
+#menu > div:nth-of-type(4),
+   #menu > div:nth-of-type(4) p{
+    	box-shadow: 0px 1px 15px 1px rgba(206,15,33,.7);
+}
+ 
+#menu > div:last-of-type, 
+	#menu > div:last-of-type p{
+    	box-shadow: 0px 1px 5px 2px rgba(17, 206, 181, 0.8); 
+}
+/*======= End ===========================*/
+
+/*======= Texts Shadow ==================*/
+#menu > div:first-of-type,
+   #menu > div:first-of-type p { 
+		box-shadow: 0px 1px 5px 2px rgba(255, 255, 255, 0.8);
+}
+ 
+#menu > div:nth-of-type(2),
+   #menu > div:nth-of-type(2) p{ 
+		box-shadow: 0px 1px 5px 2px rgba(14, 199, 255, 0.8) ;
+}
+ 
+#menu > div:nth-of-type(3),
+   #menu > div:nth-of-type(3) p {
+		box-shadow: 0px 1px 5px 2px rgba(248, 232, 11, 0.8);
+}
+ 
+#menu > div:nth-of-type(4),
+   #menu > div:nth-of-type(4) p{
+		box-shadow: 0px 1px 15px 1px rgba(206,15,33,.7);
+}
+ 
+#menu > div:last-of-type, 
+	#menu > div:last-of-type p{
+		box-shadow: 0px 1px 5px 2px rgba(17, 206, 181, 0.8); 
+}
+/*======= End ===========================*/
+
+/*======= Texts Hover ===================*/
+#menu > div:first-of-type:hover p{
+    background-color: rgba(255, 255, 255, .9);
+    color: black;
+}
+ 
+#menu > div:nth-of-type(2):hover p{
+    background-color: rgba(14, 199, 255, 0.9);
+}
+ 
+#menu > div:nth-of-type(3):hover p{
+    background-color: rgba(248, 232, 11, 0.9);
+    color: black;
+}
+ 
+#menu > div:nth-of-type(4):hover p{
+    background-color: rgba(206,15,33,.9);
+}
+ 
+#menu > div:last-of-type:hover p{
+    background-color: rgba(17, 206, 181, 0.9);
+}
+/*======= End ===========================*/
+
+/*======= Pokeball Icons ================*/
+#menuAttack{
+    margin-top: -12%;
+    margin-right: -52%;
+    background-image: url('../Image/02.png');
+}
+
+#menuAbilities{
+    margin-top: 50%;
+    margin-right: -32%;
+    background-image: url('../Image/03.png');
+}
+
+#menuType{
+    margin-top: -55%;
+    background-image: url('../Image/13.png');
+}
+
+#menuPokemon{
+    margin-top: 50%;
+    margin-left: -32%;
+    background-image: url('../Image/18.png');
+}
+
+#menuEvolution{
+    margin-top: -12%;
+    margin-left: -52%;
+    background-image: url('../Image/20.png');
+}
+/*======= End ===========================*/
+
+/*======= End ===============================================*/
+

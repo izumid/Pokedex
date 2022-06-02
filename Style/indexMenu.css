@@ -1,0 +1,351 @@
+/*======= Menu Area =========================================*/
+#menu{
+	width: 98%;
+	height: 14%;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: rgba(208, 21, 52,1);
+	border-radius: 5px;
+}
+/*======= End ===============================================*/
+
+/*======= Lights ============================================*/
+#menu > #lights{
+	width:21%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: row;
+}
+
+#menu > #lights > #bigLight{
+	width: 84px;
+	height: 80px;
+	
+	margin-top: 10px;
+	border-radius: 100%;
+	background-color: white;
+	border: 2px solid #111;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu > #lights > #bigLight > div{
+	width: 83%;
+	height: 83%;
+	margin-left: 4%;
+	margin-top: -8%;
+	border-radius: 100%;
+
+	border: 2px solid black;
+}
+
+#menu > #lights > #smallLight{
+	width: 50%;
+	height: 95%;
+
+	display: flex;
+	align-items: end;
+	justify-content: space-between;
+}
+
+#menu > #lights >  #smallLight > div{
+	width: 22px;
+	height:22px;
+
+	border-radius: 100%;
+	border: 2px solid #111;
+}
+
+#menu > #lights > #bigLight > #blue{
+	animation: blinkBlue 1.2s  infinite ease-in-out;
+	animation-direction: alternate;
+}
+
+#menu > #lights > #smallLight > #red{
+	animation: blinkRed 1.5s  infinite ease-in-out;
+	animation-direction: alternate;
+}
+
+#menu > #lights >  #smallLight >#yellow{
+	animation: blinkYellow 1.5s  infinite ease-in-out;
+	animation-direction: alternate;
+}
+
+#menu > #lights > #smallLight > #green{
+	animation: blinkGreen 1.5s  infinite ease-in-out;
+	animation-direction: alternate;
+}
+
+/*======= Lights Animations =======*/
+@keyframes blinkBlue {
+	0%{ 
+		background-color:  rgb(9, 122, 145);
+		box-shadow: 0px 2px 4px 1px rgba(14,214,255,.5);
+	}
+	100%{  
+		background-color: rgba(14,214,255,1);
+		box-shadow: 0px 2px 8px 3px rgba(14,214,255,1);
+		border: 2px solid rgb(15, 181, 214);
+	}
+}
+
+@keyframes blinkRed {
+	0%{ 
+		background-color: rgba(108,37,37,1);
+		box-shadow: 0px 0px 10px 1px rgba(108,37,37,.5);
+	}
+	100%{   
+		background-color: rgba(255,0,18,1);      
+		box-shadow: 0px 0px 8px 3px rgba(255,0,18,1);
+		border: 2px solid rgb(238, 0, 16);
+	}
+}
+
+@keyframes blinkYellow {
+	0%{
+		background-color: rgba(108,151,37,1);     
+		box-shadow: 0px 2px 4px 1px rgba(255,252,0,.1);
+	}
+	100%{
+		background-color: rgba(255,252,0,1);
+		box-shadow: 0px 2px 8px 3px rgba(255,252,0,1);
+		border: 2px solid rgba(238,238,0,1);
+	}
+}
+
+@keyframes blinkGreen {
+	0%{ 
+		background-color: rgba(44,108,37,1);
+		box-shadow: 0px 2px 8px 3px rgba(41,218,127,.1);
+	}
+	100%{
+		background-color: rgba(41,218,127,1);
+		box-shadow: 0px 2px 8px 3px rgba(41,218,127,1);
+		border: 2px solid rgba(41,188,127,1);
+
+		
+	}
+}
+/*======= End Lights Animations =======*/
+
+/*======= End ===============================================*/
+
+/*======= Logo Area ======================================*/
+#menu aside {
+	width: 72%;
+	height: 100%;
+
+	display: flex;
+	flex-flow: column;
+	justify-content:  initial;
+}
+
+#menu > aside > #topLogo{
+	width: 100%;
+	height: 70%;
+	overflow:  hidden;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 3px solid black;
+}
+
+#menu > aside  #topLogo > #logo{
+	width:30%;
+	height: 100%;
+}
+
+#menu > aside  #topLogo > #logo > h1{
+	
+	margin-top: 14px;
+
+	color: white;
+	font-size: 2.2rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+	text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+}
+
+#menu aside  > #bottomLogo{
+	width: 100%;
+	height: 5%;
+	border-bottom: 4px solid #111;
+
+	background-color: rgba(151, 5, 41,1);
+}
+
+/*======= End ===============================================*/
+
+/*======= Hardwares =========================================*/
+#menu #hardwareEffect {
+	width: 25%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: row wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.hardware{
+	position: relative;
+
+	width: 20px;
+	height: 20px;
+
+	font-family: arial;
+	font-weight: 545;
+	font-size: 1.6rem;
+	transform: rotate(-15deg);
+	text-shadow: 1px -2px 2px rgba(75, 75, 75, 0.8);
+
+	display: flex;
+	flex-direction: row wrap;
+	align-items: center;
+	justify-content: center;
+
+	background: rgb(112,112,112);
+	background: linear-gradient(
+		42deg,
+		rgba(112,112,112,1) 18%,
+		rgba(168,168,168,1) 67%,
+		rgba(233,233,233,1) 100%
+	);      
+	border-radius: 100%;
+	border: 2px solid #111;
+}
+
+#menu #hardwareEffect .hardware:first-of-type{
+	margin-left: 28%;
+	margin-top: 28%;
+	box-shadow:-2px 2px 1px 2px rgb(0, 0, 0,.3);
+
+}
+
+#menu #hardwareEffect .hardware:last-of-type{
+	margin-top: -29%;
+	margin-right: 14%;
+	box-shadow: -2px 2px 1px 2px rgb(0, 0, 0,.3);
+}
+
+#menu #hardwareEffect #bar {
+	width: 5%;
+	height: 150%;
+	transform: rotate(-36deg);
+
+	margin-left: -8%;
+	background-color: #333;
+	border: 3px solid black;
+}
+/*======= End ===============================================*/
+
+/*======= Menu Buttons ======================================*/
+#menu #menuButtons{
+	width:55%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#menu #digital{
+	width: 68px;
+	height: 68px;
+	margin-left: -4%;
+
+}
+
+#menu #digital > div{
+	position: absolute;
+
+	width: 25px;
+	height: 25px;
+
+	font-size: 1.rem;
+	font-weight: bolder;
+
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+	
+	background-color: #444;
+	border-radius: 2px;	
+}
+
+#menu #digital > div:nth-of-type(-n+3){
+	background: linear-gradient(
+		90deg,
+		rgba(144,144,144,1) 0%,
+		rgba(85,85,85,1) 4%,
+		rgba(68,68,68,1) 67%
+	);
+	box-shadow: -2px 2px 3px 1px rgb(0, 0, 0,.5);
+}
+
+#digitalUp{ margin-left: 22px;}
+
+#digitalLeft{ margin-top: 22px; }
+
+#digitalBottom{
+	margin-top: 43px;
+	margin-left: 22px;	
+}
+
+#digitalRight{
+	margin-top: 22px;
+	margin-left: 43px;
+	box-shadow: -2px 3px 3px 0px rgb(0, 0, 0,.5);
+}
+
+#digitalCenter{ 
+	margin-top: 22px;
+	margin-left: 20px;
+}
+
+#menuButtons > #buttons{
+	width: 185px;
+	height: 55px;
+
+	display: flex;
+	flex-flow: row wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+
+	border: 3px solid rgba(0, 0, 0, 1);
+	border-radius: 5px;
+	box-shadow: -2px 2px 1px 2px rgb(0, 0, 0,.4);
+}
+
+#menuButtons > #buttons > button{
+	width: 20%;
+	height: 50%;
+	font-size: 0.55rem;
+	cursor: pointer;
+	transition: ease-in-out .4s;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: rgba(82,154,246,1);
+	border: 1px solid rgba(0, 0, 0, 1);
+}
+
+#menuButtons > #buttons > button:hover{
+	background-color: #444;
+	color: white;
+}
+/*======= End ===============================================*/

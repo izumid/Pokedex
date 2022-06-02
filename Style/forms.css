@@ -1,0 +1,228 @@
+/*======= Forms Position ============================*/
+#HistoryAttack{
+    margin-top: -200vh;
+    margin-right: -200vh;
+}
+
+#HistoryAbilities{
+    margin-top: 200vh;
+    margin-right: -200vh;
+}
+
+#HistoryType{ margin-top: -200vh; }
+
+#HistoryPokemon{
+    margin-top: 400vh;
+    margin-left: -400vh;
+}
+
+#HistoryEvolution{
+    margin-top: -200vh;
+    margin-left: -200vh;
+}
+/*======= End =======================================*/
+
+/*======= Forms Containers and Effects ==============*/
+.adminPanelForms{ position: absolute; }
+
+.formContainer{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    
+    transition: 0.6s ease-in-out;
+    z-index: 100;
+}
+
+.redBarEffect{   
+    position: absolute;
+    margin-top: -4px;
+    width: 125px;
+    height: 8px;
+    display: flex;
+
+    background-color: rgb(238,28,56);
+    box-shadow: 0px 0px 3px 0px rgba(10, 10, 10, 1);
+    border-radius: 10px;
+}
+/*======= End =======================================*/
+
+/*======= Close Button ==============================*/
+.closeButton{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 75%;
+    
+    width: 50px;
+    height: 25px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border-radius: 2px;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out .2s;
+    color: #bbb;
+
+    background-color: #eee;
+    border-top-right-radius: 15px;
+    box-shadow: 0px 0px 3px 1px rgb(0, 0, 0,.3);
+}
+
+.closeButton:hover{
+    background-color: #333;
+    color: white;
+}
+/*======= End =======================================*/
+
+/*======= FORM =======================================================*/
+.formContainer > form{
+    justify-content: space-around;
+    align-items: center;
+    width: 345px;
+    min-height: 100px;
+    height: auto;
+
+    display: flex;
+    flex-flow: column wrap;
+    padding-top: 12%;
+    padding-bottom: 8%;
+
+    border: 2px solid #eee;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 5px 3px rgba(10, 10, 10, .4);
+}
+
+.formContainer > form > label,
+	.radiosContainer{
+    	margin-bottom: 25px;
+} 
+
+.formContainer > form > label:first-of-type{
+    margin-top: 10px;
+}
+
+.formContainer > form > label{
+    width: 220px;
+    height: 50px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.formContainer > form > label image{
+    width: 20px;
+    height: 20px;
+}
+
+.formContainer > form > label input,
+	.formContainer > form > label textarea{
+    width: 70%;
+    height: 60%;
+    border: none;
+
+    border-radius: 3px;
+    background-color: #eee;
+}
+
+.formContainer > form > label textarea{
+	line-height: 2;
+
+}
+.superInputLabel > input{
+    width: 33% !important;
+    background-color: antiquewhite !important;
+}
+
+.formContainer textarea{ resize: none; }
+
+.formContainer p
+ ,.formContainer input
+  ,.formContainer textarea{
+    font-size: .9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: ease-in-out .2s;
+    text-indent: 15px;
+}
+
+.formContainer input:focus
+ ,.formContainer textarea:focus{
+    outline: none;
+    /*color: rgb(73,143,225);*/
+    color: rgb(238,28,56);
+}
+
+.formContainer input::placeholder
+ ,.formContainer textarea::placeholder{
+    color: rgba(10, 10, 10, .3);
+    text-indent: 15px;
+}
+
+.grayBarEffect{
+    width:100%;
+    height: 2px;
+
+    background-color: rgba(10, 10, 10, .3);
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 1px rgb(0, 0, 0, 1);
+}
+
+.radiosContainer{
+    width: 220px;
+    height: 50px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(10, 10, 10, .5);
+
+}
+
+.radiosContainer > span{
+    width: 100%;
+    text-align: center;
+}
+
+.radiosContainer > label{ 
+    
+    height: 60%; 
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.radiosContainer > label p{ font-size: .8rem; }
+
+.formContainer .btnSubmit{
+    width: 80%;
+    height: 45px;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: #bbb;
+    transition: ease-in-out .3s;
+    cursor: pointer;
+
+    background-color: #eee;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0,.2);
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.formContainer .btnSubmit:hover{
+    background-color: rgb(41, 41, 41);
+    color: white;
+    cursor: pointer;
+}

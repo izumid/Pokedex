@@ -1,0 +1,242 @@
+/*======= Containers ================================*/
+#sideScreenBotton{
+	width: 100%;
+	height: 54.7%;
+
+	display: flex;
+	flex-flow: column wrap;
+	align-content: space-between;
+}
+
+#sideScreenBotton #sideScreenCMenu {
+	width: 13.5%;
+	height: 100%;
+	
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+#sideScreenBotton > #sideScreenCMenu > #ScreenCArrowContainer{
+	width: 100%;
+	height: 31%;
+
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: end;
+	align-items: end;  
+}
+/*======= End =======================================*/
+
+/*======= Arrows ====================================*/
+
+#sideScreenBotton #ScreenCArrowContainer button, #sideScreenCMenu >  button{
+	width: 80%;
+	cursor: pointer;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+
+	background-color: rgb(240, 240, 240);
+	border-radius: 3px;
+}
+
+#sideScreenBotton #ScreenCArrowContainer button:first-of-type{
+	height: 33%;
+}
+
+#arrowUp, #arrowDown{
+	width: 0px; 
+	height: 0px; 
+
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+}
+
+#arrowUp{ 
+	border-bottom: 15px solid #ccc;
+}
+
+.arrowBody{
+	width: 14px; 
+	height: 10px; 
+
+	background-color: #ccc;
+}
+
+#sideScreenBotton #ScreenCArrowContainer button:last-of-type{
+	height: 49%;
+}
+
+#sideScreenBotton #ScreenCArrowContainer button:last-of-type > .arrowBody{
+	margin-top: 20%;
+
+}
+
+#arrowDown{ border-top: 15px solid #ccc; }
+/*======= End =======================================*/
+
+/*======= Buttons And Yellow Effect =================*/
+#sideScreenBotton  #screenCButtons{
+	width: 100%;
+	height: 43%;
+
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#screenCYellow{
+	width: 22px;
+	height:22px;
+
+	border-radius: 100%;
+	border: 2px solid #111;
+
+	background: rgb(97,95,57);
+	background: linear-gradient(
+		45deg, rgba(97,95,57,1) 1%,
+		rgba(203,193,30,1) 46%,
+		rgba(255,241,0,1) 100%
+	);
+}
+
+#sideScreenBotton #screenCButtonB,
+#sideScreenBotton #screenCButtonA{
+	width: 80%;
+	height: 41px;
+	border-radius: 100% !important;
+	font-size: 1.5em;
+	box-shadow: -3px 3px 0px 1px rgba(49, 49, 49, 0.644);
+	align-self: flex-end;	
+}
+/*======= End =======================================*/
+
+/*======= Hardwares =================================*/
+#sideScreenCMenu > .hardware{
+margin-top: 100%;
+margin-left: -18%;
+}
+
+#containerScreenC{
+	width: 87.5%;
+	height: 100%;
+
+	display: flex;
+	flex-flow: column;
+	justify-content: initial;
+	align-items: center;
+
+}
+
+#containerScreenC .hardware{
+	margin-top: 1%;
+	margin-right: 5%;
+	align-self: end;
+}
+/*======= End =======================================*/
+
+/*======= Container Pokemon Screen =================*/
+#containerScreenC  #ScreenC{
+	margin-top: 2.6%;
+	margin-left: -6%;
+	
+	width: 91%;
+	height: 84%;
+	overflow: hidden;
+
+	background-color: rgb(10, 64, 53);
+	border: 3px solid black;
+	border-radius: 20px;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+}
+/*======= End =======================================*/
+
+/*======= Style To Scroll Bar =======================*/
+::-webkit-scrollbar {
+width: 10px;
+background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+background-color: #F5F5F5;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.44, rgb(217, 122, 122)),
+		color-stop(0.72, rgb(189, 73, 73)),
+		color-stop(0.86, rgb(148, 28, 28))
+	);
+}
+/*======= End =======================================*/
+
+/*======= Pokemon's List Containers ==============*/
+#containerScreenC  #ScreenC #resultPokemon{
+	width: 100%;
+	height: 70px;
+	font-size: .8rem;
+	margin-top: 5%;
+
+	display: flex;
+	flex-flow: row ;
+	align-items: center;
+	justify-content: space-around;
+
+	color: white;
+	font-family: arial;
+	font-weight: bolder;
+
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+#containerScreenC  #ScreenC #resultPokemon > p {
+	height: 20px;
+
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+
+#containerScreenC  #ScreenC #resultPokemon > p:first-of-type{
+	font-size: 1.5rem;
+	color: rgba(49, 49, 49, 0.3);
+}
+
+#containerScreenC  #ScreenC #resultPokemon span {
+	height: 20px;
+
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+}
+
+#containerScreenC  #ScreenC #resultPokemon  #searchPokemonImage{
+	min-width: 50px;
+	min-height: 50px;
+	width: auto;
+	height: auto;
+
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	align-content: space-around;
+}
+/*======= End =======================================*/
